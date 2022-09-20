@@ -16,11 +16,13 @@
       <div id="todo-subtitle">~ Today I need to ~</div>
 
       <!-- Section: input -->
-      <!-- Input -->
-      <input id="todo-input" type="text" placeholder="Input Text Here" />
+      <div id="section-form">
+        <!-- Input -->
+        <input id="todo-input" type="text" placeholder="Input Text Here" />
 
-      <!-- Button Submit -->
-      <button id="todo-submit">Submit</button>
+        <!-- Button Submit -->
+        <button id="todo-submit">Submit</button>
+      </div>
 
       <!-- Section output -->
       <ul id="todo-output"></ul>
@@ -46,7 +48,7 @@
       });
 
       // Saat di input ditekan enter akan menjalankan fungsi fnClickHandler
-      input.addEventListener("keyup", (event) => {
+      input.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
           const value = input.value;
           fnClickHandler(value);

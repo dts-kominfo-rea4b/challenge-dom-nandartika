@@ -13,23 +13,42 @@ body {
   width: 650px;
   background-color: white;
   border-radius: 25px;
+  padding: 40px;
 
   display: flex;
   flex-direction: column;
+  align-items: stretch;
+}
+
+#section-form {
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
 #todo-title {
   background-color: #66f9ca;
-  width: -moz-fit-content;
-  width: fit-content;
   padding: 0 12px;
+  margin-bottom: 40px;
   border-radius: 8px;
 
-  margin: 40px 0;
+  display: flex;
+  justify-content: center;
 }
 
 #todo-subtitle {
   font-size: large;
   margin: 4px 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+#todo-input {
+  height: 32px;
+  width: 100%;
+}
+
+#todo-submit {
+  height: 26px;
 }
